@@ -1,0 +1,71 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+@include foundation-global-styles;
+@include foundation-grid;
+
+
+@media only screen and (min-width: 320px) {
+    body {
+        @include grid-row(); 
+        background-color: white;
+        color:#1D1160; 
+        font-family: 'PT Sans Caption', sans-serif;
+    }
+
+    header {
+        @include grid-column(12); 
+        
+    
+
+        h1 {
+        text-align: center; 
+        position: fixed;
+        }
+
+        img {
+            height: 200px;
+            width: 100%; 
+            margin-top: 40%;
+            margin-bottom: 3%;  
+
+        }
+
+        .navigation ul {
+            text-align: center; 
+            margin: auto; 
+            padding: 0; 
+        }
+
+        .navigation li {
+            @include grid-column(6); 
+            display: inline; 
+            border: 1px solid white; 
+        }
+
+        #home {
+            @include grid-column(12); 
+            display: block; 
+        }
+
+        li:hover {
+            background-color:  #008CA8;
+            color: white;
+        }
+
+    }
+
+    #mapid { 
+        @include grid-column(12); 
+        height: 100px; 
+        width: 100%;
+        margin: auto;  
+        margin-top: 3%; 
+    }
+
+
+
+
+
+
+
+
+}
